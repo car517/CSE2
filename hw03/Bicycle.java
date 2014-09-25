@@ -18,12 +18,13 @@ public class Bicycle{
     public static void main(String[] args) {
         Scanner myScanner; //declare scanner
         myScanner= new Scanner( System.in );// declare scannr input
-        System.out.print("Enter Number of Counts on Cyclometer (an integer >= 0) : "); //input number of counts
-        int nCounts= myScanner.nextInt(); //define number of counts
         System.out.print("Enter Number of Seconds during which the Counts Occured (an integer >= 0) : "); //input number of seconds
         int nSec= myScanner.nextInt(); // define number of seconds
+        System.out.print("Enter Number of Counts on Cyclometer (an integer >= 0) : "); //input number of counts
+        int nCounts= myScanner.nextInt(); //define number of counts
         
-        double PI=3.14; //define pi
+        
+        double PI=3.14159; //define pi
         double inchesperfoot=12; //define number of inches per foot
         double feetpermile=5280; //define number of feet per mile
         double secondperminute=60;// define number of seconds in a minute
@@ -34,8 +35,8 @@ public class Bicycle{
         dTrav=(wDiam*nCounts*PI)/(inchesperfoot*feetpermile);// formula for distance traveled in miles
         aMPH=dTrav/(aMin/minutesperhour);// formula for average miles per hour
        
-        System.out.println("The distance traveled was "+dTrav+" and took "+aMin+" minutes.");// print distance traveled in number of minutes
-        System.out.println("The average mph was "+aMPH+""); // print average miles per hour
+        System.out.printf("The distance traveled was %.2f and took %.2f minutes.\n", dTrav, aMin);// print distance traveled in number of minutes
+        System.out.printf("The average mph was %.2f\n", aMPH); // print average miles per hour
         
     } // end of main method
 } // endo of class

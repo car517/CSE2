@@ -3,7 +3,6 @@
 //September 05 2014
 //CSE 001-1111
 //Cyclometer Java Program
-//
 // First Compile The Program
 //  javac Cyclometer.java
 // Run The Program
