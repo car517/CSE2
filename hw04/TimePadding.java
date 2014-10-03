@@ -19,7 +19,7 @@ public class TimePadding {
                 System.out.println("Error: Input is not positive");
             }
             else
-                System.out.println("The time is "+ (int) time/3600 +" ) //will give conventional output
+                System.out.println("The time is "+ ((int) (time/3600)) +" "); //will give conventional output
         
             
         }

@@ -1,14 +1,15 @@
 //////Carlos Rosrio
 import java.util.Scanner;
+Scanner myScanner;
 
 public class BigMacAgain{
     public static void main(String[] args) {
-        Scanner myScanner;
         myScanner= new Scanner(System.in);
         System.out.print("Enter the number of Big Macs (Must be a positive integer) : ");
         double tBigMac = 0;
         
         int nBigMacs=0; //need to declare for whole class
+        
         if(myScanner.hasNextInt()){
         nBigMacs=myScanner.nextInt();
         
@@ -18,7 +19,7 @@ public class BigMacAgain{
             else{
                 tBigMac=nBigMacs*2.22;
                 System.out.println(" You ordered "+nBigMacs+" for the cost of "+nBigMacs+"*2.22= "+tBigMac+" ");
-         }
+            }
         }
         else
         System.out.println("Error: input is not an integer.");
