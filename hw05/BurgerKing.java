@@ -15,7 +15,7 @@ static Scanner myScanner;
     public static void main(String[] args) {
         myScanner= new Scanner (System.in);
         System.out.println(" Enter the first letter of your food of choice. \nYour choices are: Burger (B or b) , Soda (S or s) , Fries (F or f) , All the fixens (A) ");
-        String Foodltr="o"; String Food="o";
+        String Foodltr; String Food;
         Foodltr= myScanner.next();
 
         switch ( Foodltr.toString().toLowerCase() ) {
@@ -71,6 +71,7 @@ static Scanner myScanner;
                 System.out.println("You did not enter a valid entry");
                     break;
         }
+
 
     }
 }

@@ -18,10 +18,10 @@ public class FourDigits {
         double myValue1=myScanner.nextDouble(); // Define input
         double myValue= (myValue1*10000); // creates value for decimals
         int myValueInt= (int) myValue; // The four decimals become number integers
-        int printVal1=(myValueInt/1000 %10); //Gives value of first decimal
-        int printVal2=(myValueInt/100 %10); //Gives value of second integer
-        int printVal3=(myValueInt/10 %10); //Gives value of third integer
-        int printVal4=(myValueInt %10); //gives value of fourth integer
+        int printVal1=((int) (myValueInt%1000)); //Gives value of first decimal
+        int printVal2=((int) (myValueInt%100)); //Gives value of second integer
+        int printVal3=((int) (myValueInt%10)); //Gives value of third integer
+        int printVal4=(myValueInt); //gives value of fourth integer
         
         System.out.println("The four digits are "+printVal1+" "+printVal2+" "+printVal3+" "+printVal4+""); //Print first four decimals
         
