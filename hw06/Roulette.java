@@ -2,7 +2,7 @@
 // Carlos Rosario
 // September 22 2014
 // CSE 002
-// Roulette Java Program
+// NumberStack Java Program
 
 
 // Program Summary Notes

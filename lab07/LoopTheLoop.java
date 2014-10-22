@@ -20,12 +20,12 @@ static Scanner myScanner;
         if (myScanner.hasNextInt() ) {
             nStars=myScanner.nextInt();
                 if ( (nStars>=1) && (nStars<=15) ) {
-                    for (int i=0; i<nStars; i +=1) {
+                    for (int i=0; i<=nStars; i +=1) {
                         out += in;
                     }
                     System.out.println(" "+out+" ");
                     out=""; in="*";
-                    for (int i=0; i<nStars; i +=1) {
+                    for (int i=0; i<=nStars; i +=1) {
                         out += in;
                         System.out.println(" "+out+" ");
                     }  
