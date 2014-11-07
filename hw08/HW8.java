@@ -33,7 +33,7 @@ public class HW8{ //class
         }
         
         return in; // return in that this method will equal given user input
-    }
+    } 
     
     public static char getInput (Scanner scan, String out, int x) { // method for YyNn
         char in = ' '; //intializations of what will return
