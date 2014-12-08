@@ -10,33 +10,33 @@ static Scanner myScanner;
        
         myScanner= new Scanner (System.in);
         
-           String smln= Integer.toString(input);
-                String out=""; 
+         //  String smln= Integer.toString(input);
+           //     String out=""; 
                 
                 // Code in the making into a function
                         
-                        for (int j=0; j<input; j++) {    
+                        /*for (int j=0; j<input; j++) {    
                             for (int i=0; i<((input*2)-1);i++) {
                                 
                                 out += smln;
                             }
-                            System.out.println(""+out); 
+                            //System.out.println(""+out); 
                             out="";
-                            smln= Integer.toString(input);
-                        }
+                            //smln= Integer.toString(input);
+                        }*/
                         
 //REVIEW FOR EXAM 2
 
 //Write what happend to varibles in a column next to exam problem, Need to look at pass by value, Review call by value system, 
 
-    for ( int i=0, i<10, i++) {
+   /* for ( int i=0, i<10, i++) {
         for (int j=0, j<5, j++){
             if (j<i && i<5)
             System.out.print(i);
         }
         if (j<i-5 && i>=5)
         System.out.print(i); //this is 0000, 11111,22222
-    }
+    }*/ 
            
 ////////////////////////
 // Arrays 
@@ -62,15 +62,64 @@ static Scanner myScanner;
 //see slide for for loop on grades
 //shuffle- take random pairs and shuffle their value around
 //shuffle only really used for card games or something
-//need for loopo to have completely copied array, or else setting them equal to each other will only keep one
+//need for loopo to have completely copied array, or else setting them equal to each other will only keep onek
                         
         
    //Method that doesn't do anyything might print something on the screen (void) , and also make something easier to read
    //
    
    
+///////////////////////////////////////////////////////////
+/////// Book Notes Arrays ////////////////
+/* Multidimensional Arrays //
+// double [] [] distances = {
+     {0, 983, 787, 714, 1375, 967, 1087}
+     {3, 433, 434, 311, 3454, 502, 1093}
+    }
+two dimensional array decleration
+     elemnttype [][] arrayrefvar; or elementtype arrayname[][]
+for integers
+    int [][] matrix; or int matrix[][](style allowed but not preferred)
+    matrix= new int [5(row)][5(column)];
+To assign values at certain point just go
+    matrix [2][1]= 7;
+The logic is, there are two arrays, x[0], x[1], with one element in each, so x.length would give you 2, for number of rows
+x[0].length and x[1].length are each 1
+Ragged array is one in which the rows each have different number of elements, usually done by the long way used in line 76 and 77
+or you can say
+    int [][] myarray= new int [5][];
+    myarray[0]= new int [5];
+    myarray[1]= new int [4];
+    myarray[2]= new int [12];
+Then you can assign values, liek myarray[2][3]=12;
+if you do myarray[0]=x, would all elements in this array = x ?
+
+    
+      */
+   /* int[][] array = new int[5][6];
+    int[] x = {1, 2};
+    array[0] = x;
+    System.out.println("array[0][1] is " + array[0][4]);*/
+    //What happens to the other spaces in the matrix, do they remain empty?
+    //(Answer) Program compiles but has a runtime error
+    
+        
+    int[][] r = new int[2]; //Incompatible types, need one bracket in beginning
+    int[] x = new int[]; //This line doesn't compile because the dimension is not in it
+    int[][] y = new int[3][]; //No Idea how this compiles if above line doesn't
+  
+    //Initializing arrays with input values 
+    int [][] matrix= new int[10][10];
+
+    System.out.println("Enter " + matrix.length + " rows and " + matrix[0].length + " columns: ");
+    for (int row = 0; row < matrix.length; row++) {
+        for (int column = 0; column < matrix[row].length; column++) {
+            matrix[row][column] = myScanner.nextInt();
+        }
+    }  
+    
+    //replace line 117 with (int)math.random*100 to decalre with numbers from 0 to 99
+    
     }
 }
 
-//for(int i=1; i<=num;i++)
-  //function_f1(i);

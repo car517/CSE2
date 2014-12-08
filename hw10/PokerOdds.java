@@ -266,7 +266,7 @@ public class PokerOdds{ // class
                 System.out.println(space+"Two: "+space2+two);
                 System.out.println(dash);
                 System.out.println("Total Not Exactly One Pair: "+notonepair);
-                
+                System.out.println(""+(7%13) );
                 
                 
     } //end of simulate odds method
